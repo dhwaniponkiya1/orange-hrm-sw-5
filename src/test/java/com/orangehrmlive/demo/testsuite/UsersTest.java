@@ -25,28 +25,27 @@ public class UsersTest extends BaseTest {
 
     }
 
-//    @Test(groups = {"sanity", "smoke", "regression"})
-//    public void adminShouldAddUserSuccessFully() throws InterruptedException {
-//        //login account
-//        loginPage.loginToApp("Admin","admin123");
-//
-//        Thread.sleep(2000);
-//        homePage.clickOnAdminTab();         //click on admin tab
-//        Assert.assertEquals(adminPage.getSystemUsersText(), "System Users");        //verify text
-//        adminPage.clickOnAddButton();       //click on add
-//        Assert.assertEquals(addUserPage.getAddUserText(), "Add User");     //verify add user
-//        addUserPage.clickOnRoleDropdown();              //expand dropdown
-//        addUserPage.selectAdminRoleFromDropdown();      //select admin user role
-////        addUserPage.enterEmpName("Ranga  Akunuri");          //enter emp name
-//        addUserPage.enterUserName("ranganku");         //enter user name
-//        addUserPage.selectStatusDropdown();                       // click on dropdown select status
-//        addUserPage.selectDisabledStatusFromDropdown();         //select disable
-//        addUserPage.enterPassword("prime1234");         //enter pwd
-//        addUserPage.enterConfirmPassword("prime1234");      //enter confirm pwd
-//        addUserPage.clickOnSaveButton();            //click save
-//
-//    }
+    @Test(groups = {"sanity", "smoke", "regression"})
+    public void adminShouldAddUserSuccessFully() throws InterruptedException {
+        //login account
+        loginPage.loginToApp("Admin","admin123");
 
+        Thread.sleep(2000);
+        homePage.clickOnAdminTab();         //click on admin tab
+        Assert.assertEquals(adminPage.getSystemUsersText(), "System Users");        //verify text
+        adminPage.clickOnAddButton();       //click on add
+        Assert.assertEquals(addUserPage.getAddUserText(), "Add User");     //verify add user
+        addUserPage.clickOnRoleDropdown();              //expand dropdown
+        addUserPage.selectAdminRoleFromDropdown();      //select admin user role
+//        addUserPage.enterEmpName("Ranga  Akunuri");          //enter emp name
+        addUserPage.enterUserName("ranganku");         //enter user name
+        addUserPage.selectStatusDropdown();                       // click on dropdown select status
+        addUserPage.selectDisabledStatusFromDropdown();         //select disable
+        addUserPage.enterPassword("prime1234");         //enter pwd
+        addUserPage.enterConfirmPassword("prime1234");      //enter confirm pwd
+        addUserPage.clickOnSaveButton();            //click save
+
+    }
 
     @Test(groups = {"smoke", "regression"})
     public void searchTheUserCreatedAndVerifyIt() throws InterruptedException {
