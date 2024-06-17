@@ -12,8 +12,8 @@
     </listeners>
     <test name="Login Test"   >
         <classes>
-            <!--            <class name="com.tutorialsninja.demo.testsuite.TopMenuTest"></class>-->
-
+            <class name="com.orangehrmlive.demo.testsuite.UsersTest"></class>
+            <class name="com.orangehrmlive.demo.testsuite.LoginTest"></class>
         </classes>
     </test>
 </suite>
